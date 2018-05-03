@@ -16,6 +16,8 @@ public class Main {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application.xml");
         GreetImpl greet = applicationContext.getBean("greetImpl", GreetImpl.class);
         //        greet.sayHello();
-        greet.testAnnotationAspect();
+        //        greet.testAnnotationAspect();
+        Apology apology = (Apology) greet;
+        apology.saySorry();
     }
 }

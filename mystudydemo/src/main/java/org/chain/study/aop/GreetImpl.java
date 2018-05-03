@@ -1,5 +1,6 @@
 package org.chain.study.aop;
 
+import org.chain.study.aop.annotation.Tag;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,5 +15,10 @@ import org.springframework.stereotype.Component;
 public class GreetImpl implements Greet {
     public void sayHello() {
         System.out.println("hello guys!");
+    }
+
+    @Tag
+    public void testAnnotationAspect() {
+        System.out.println("test annotation aspect@");
     }
 }

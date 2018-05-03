@@ -23,4 +23,12 @@ public class GreetAspect {
         System.out.println("aspect after");
         return o;
     }
+
+    @Around("@annotation(org.chain.study.aop.annotation.Tag)")
+    public Object doArount1(ProceedingJoinPoint pjp) throws Throwable {
+        System.out.println("annotation aspect before");
+        Object o = pjp.proceed();
+        System.out.println("annotation aspect after");
+        return o;
+    }
 }

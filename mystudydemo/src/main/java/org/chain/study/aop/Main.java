@@ -14,7 +14,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application.xml");
-        Greet greet = applicationContext.getBean("greetImpl", GreetImpl.class);
-        greet.sayHello();
+        GreetImpl greet = applicationContext.getBean("greetImpl", GreetImpl.class);
+        //        greet.sayHello();
+        greet.testAnnotationAspect();
     }
 }

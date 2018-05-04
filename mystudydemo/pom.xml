@@ -66,6 +66,13 @@
             <artifactId>aspectjrt</artifactId>
             <version>1.7.0</version>
         </dependency>
+        <!-- smart framework start-->
+        <dependency>
+            <groupId>org.chain</groupId>
+            <artifactId>smart-framework</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <!-- smart framework end-->
     </dependencies>
 
 

@@ -18,8 +18,8 @@ public class SmartController {
     private SmartService smartService;
 
     @Action(value = "GET:/test")
-    public void doSomthing() {
+    public void doSomething() {
         System.out.println("smart controller do sth...");
-        smartService.doSomthing();
+        smartService.doSomething();
     }
 }

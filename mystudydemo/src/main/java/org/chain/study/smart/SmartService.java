@@ -12,7 +12,7 @@ import org.chain.smart4j.framework.annotation.Service;
  */
 @Service
 public class SmartService {
-    public void doSomthing() {
+    public void doSomething() {
         System.out.println("smart service do sth...");
     }
 }

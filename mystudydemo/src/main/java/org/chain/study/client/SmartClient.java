@@ -20,6 +20,8 @@ public class SmartClient {
 //        Set<Class<?>> classSet = ClassHelper.getClassSet();
 //        System.out.println(classSet);
         HelperLoader.init();
-        BeanHelper.getBean(SmartController.class).doSomthing();
+        BeanHelper.getBean(SmartController.class).doSomething();
+
+
     }
 }
